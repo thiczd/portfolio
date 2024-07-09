@@ -16,25 +16,34 @@
   width: 80%;
 }
 
+.skills {
+  border: solid;
+  border-color: blue;
+}
+
 .portfolio {
   margin-top: 10px;
   display: grid;
-
   border: solid;
   border-color: black;
   justify-items: center;
   align-items: center;
 }
 
+@media (min-width: 480px) {
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 @media (min-width: 768px) {
   .portfolio {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
   .portfolio {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
@@ -43,7 +52,7 @@
   width: 50px;
 }
 
-.grid {
+.grid-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,7 +62,8 @@
   border-radius: 10px;
   width: 150px;
   height: 150px;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   background-color: whitesmoke;
   box-shadow: 1px 1px 10px 0px lightblue;
 }
