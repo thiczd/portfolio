@@ -17,12 +17,47 @@
 }
 
 .portfolio {
+  margin-top: 10px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
+
   border: solid;
   border-color: black;
   justify-items: center;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .portfolio {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.portfolio img {
+  height: 50px;
+  width: 50px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-color: gray;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  background-color: whitesmoke;
+  box-shadow: 1px 1px 10px 0px lightblue;
+}
+
+.grid * {
+  padding: 5px;
 }
