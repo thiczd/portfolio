@@ -1,0 +1,28 @@
+.home {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  border: solid;
+  border-color: black;
+}
+
+.description {
+  border: solid;
+  border-color: red;
+  display: flex;
+  justify-content: center;
+  margin-left: 10vw;
+  width: 80%;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  border: solid;
+  border-color: black;
+  justify-items: center;
+  align-items: center;
+}
