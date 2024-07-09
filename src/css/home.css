@@ -1,10 +1,14 @@
 .home {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .title {
   border: solid;
   border-color: black;
+  width: 80vw;
+  margin-bottom: 10px;
 }
 
 .description {
@@ -12,17 +16,24 @@
   border-color: red;
   display: flex;
   justify-content: center;
-  margin-left: 10vw;
-  width: 80%;
+  width: 80vw;
+  margin-bottom: 10px;
+}
+.skills h1 {
+  width: 80vw;
 }
 
 .skills {
   border: solid;
   border-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .portfolio {
-  margin-top: 10px;
+  width: 80vw;
   display: grid;
   border: solid;
   border-color: black;
@@ -32,7 +43,7 @@
 
 @media (min-width: 480px) {
   .portfolio {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 768px) {
@@ -43,7 +54,7 @@
 
 @media (min-width: 1024px) {
   .portfolio {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 

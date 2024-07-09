@@ -9,13 +9,12 @@ import pythonImage from "../images/python.png";
 import reactImage from "../images/react.png";
 const Home = () => {
   return (
-    <>
+    <div className="main">
       <div className="home">
         <h1 className="title">Homepage</h1>
         <div className="description">Welcome to my portfolio website.</div>
         <div className="skills">
           <h1>Key Skills</h1>
-
           <div className="portfolio">
             <div className="grid-box">
               <div className="grid-html-css">
@@ -47,7 +46,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
