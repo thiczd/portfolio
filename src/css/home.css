@@ -1,42 +1,70 @@
+body {
+  background-color: rgb(257, 257, 257);
+}
+
+.main {
+  border: 1px solid;
+  border-color: black;
+  border-radius: 12px;
+  box-shadow: 0px 0px 1px 1px black;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  background-color: white;
+}
+
+.main h1 {
+  font-weight: normal;
+}
 .home {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 .title {
-  border: solid;
-  border-color: black;
+  /* border: solid;
+  border-color: black; */
   width: 80vw;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .description {
-  border: solid;
-  border-color: red;
+  /* border: solid;
+  border-color: red; */
   display: flex;
   justify-content: center;
   width: 80vw;
   margin-bottom: 10px;
 }
-.skills h1 {
-  width: 80vw;
+
+.keySkills {
+  width: 65vw;
 }
 
 .skills {
-  border: solid;
-  border-color: blue;
+  /* border: 1px solid;
+  border-color: black;
+  border-radius: 12px; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 10px;
+  padding: 12px;
+  padding-top: 0;
 }
 
 .portfolio {
   width: 80vw;
   display: grid;
-  border: solid;
-  border-color: black;
+
   justify-items: center;
   align-items: center;
 }
@@ -68,9 +96,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid;
+  /* border: solid;
   border-color: gray;
-  border-radius: 10px;
+  border-radius: 10px; */
   width: 150px;
   height: 150px;
   margin-top: 10px;
@@ -84,8 +112,9 @@
 }
 
 .aboutMe {
-  border: solid;
-  border-color: orange;
+  /* border: 1px solid;
+  border-color: black;
+  border-radius: 12px; */
   display: flex;
   flex-direction: column;
   justify-content: center;

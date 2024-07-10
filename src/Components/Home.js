@@ -22,14 +22,19 @@ const Home = () => {
   };
 
   return (
-    <div className="main">
+    <motion.div
+      className="main"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 2 }}
+    >
       <div className="home">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="title">Homepage</h1>
+          <h1 className="title">Welcome</h1>
           <div className="description">Welcome to my portfolio website.</div>
         </motion.div>
         <motion.div
@@ -38,7 +43,7 @@ const Home = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1>Key Skills</h1>
+          <h1 className="keySkills">Key Skills</h1>
           <div className="portfolio">
             {[
               { img: [htmlImage, cssImage], label: "HTML/CSS" },
@@ -83,7 +88,6 @@ const Home = () => {
             })}
           </div>
         </motion.div>
-
         <motion.div
           className="aboutMe"
           initial={{ opacity: 0, y: 100 }}
@@ -98,7 +102,7 @@ const Home = () => {
           </p>
         </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
