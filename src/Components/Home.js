@@ -25,7 +25,7 @@ const Home = () => {
     <div className="main">
       <div className="home">
         <motion.div
-          initial={{ opacity: 0, y: -200 }}
+          initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
@@ -34,7 +34,7 @@ const Home = () => {
         </motion.div>
         <motion.div
           className="skills"
-          initial={{ opacity: 0, x: -200 }}
+          initial={{ opacity: 0, x: -100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
@@ -86,7 +86,7 @@ const Home = () => {
 
         <motion.div
           className="aboutMe"
-          initial={{ opacity: 0, y: 200 }}
+          initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
