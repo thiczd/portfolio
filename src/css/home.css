@@ -84,9 +84,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* border: solid;
+  border: 1px solid;
   border-color: gray;
-  border-radius: 10px; */
+  border-radius: 10px;
   width: 150px;
   height: 150px;
   margin-top: 10px;
