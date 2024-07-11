@@ -14,14 +14,19 @@
 }
 
 .grid-box-project {
+  text-align: center;
   border: 1px solid;
-  border-radius: 10px;
-  width: 40vw;
-  min-height: 20vw;
-  margin-bottom: 5vh;
+  min-width: 20vw;
+  min-height: 10vw;
+  margin: 5%;
   padding: 12px;
+  overflow: hidden;
 }
 
 .grid-box-project h2 {
   font-weight: normal;
+}
+
+.grid-box-project:hover {
+  cursor: pointer;
 }
