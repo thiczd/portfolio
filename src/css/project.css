@@ -18,7 +18,9 @@
   border: 1px solid;
   min-width: 20vw;
   min-height: 10vw;
-  margin: 5%;
+  margin: 12px;
+  margin-left: 5vw;
+  margin-right: 5vw;
   padding: 12px;
   overflow: hidden;
 }
