@@ -17,13 +17,13 @@
   display: grid;
   justify-items: center;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .grid-box-project {
   text-align: center;
   border: 1px solid;
-  max-width: 30vw;
+  max-width: 60vw;
   min-height: 10vh;
   margin: 12px;
   margin-left: 5vw;
@@ -31,14 +31,7 @@
   padding: 12px;
   overflow: hidden;
 }
-@media (max-width: 768px) {
-  .grid-project {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .grid-box-project {
-    max-width: 60vw;
-  }
-}
+
 .grid-box-project h2 {
   font-weight: normal;
 }
