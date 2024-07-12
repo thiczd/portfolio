@@ -14,14 +14,27 @@ const Project = () => {
       description:
         "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     },
-    { title: "test2", description: "test2" },
+    {
+      title: "Some stuff ",
+      description:
+        "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    },
+    {
+      title: "Some stuff ",
+      description:
+        "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    },
   ];
 
   return (
     <>
-      <div>
+      <div className="main-project">
         <h1 className="title-projects-section"> My Current Projects</h1>
-        <div className="grid-project">
+        <motion.div
+          className="grid-project"
+          transition={{ layout: { duration: 1, type: "spring" } }}
+          layout
+        >
           {projects.map(({ description, title }, index) => (
             <motion.div
               key={index}
@@ -46,7 +59,7 @@ const Project = () => {
               )}
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </>
   );
