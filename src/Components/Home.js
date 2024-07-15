@@ -8,6 +8,9 @@ import jsImage from "../images/js.png";
 import mysqlImage from "../images/mysql.png";
 import pythonImage from "../images/python.png";
 import reactImage from "../images/react.png";
+import gitHubLogo from "../images/github.png";
+import linkedInLogo from "../images/linkedin.png";
+
 const Home = () => {
   const gridVariants = {
     hidden: { opacity: 0, x: -200 },
@@ -98,13 +101,20 @@ const Home = () => {
         >
           <hr></hr>
 
-          <h1>More About Me </h1>
+          <h1> About </h1>
           <p>
             Hey my name is Thibault, thanks for checking out my website! Please
             feel free to check my projects and read more about me in the "About"
             section.
           </p>
+          <hr></hr>
         </motion.div>
+
+        <h1>Socials</h1>
+        <div className="socials-img">
+          <img src={gitHubLogo} alt="githublogo" />
+          <img src={linkedInLogo} alt="linkedInlogo" />
+        </div>
       </div>
     </motion.div>
   );

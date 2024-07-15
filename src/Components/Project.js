@@ -26,9 +26,6 @@ const Project = () => {
     setIsOpen((prev) => prev.map((item, i) => (i === index ? !item : item)));
   };
 
-  const x_screen = -10;
-  const y_screen = -10;
-
   return (
     <>
       <div className="main-project">
@@ -50,7 +47,8 @@ const Project = () => {
               key={index}
               transition={{
                 layout: { duration: 1, type: "spring" },
-                duration: 1,
+                duration: 0.5,
+                delay: 0.35 * index,
               }}
               layout
               onClick={() => {
@@ -58,8 +56,8 @@ const Project = () => {
               }}
               className="grid-box-project"
               style={{ borderRadius: "12px" }}
-              initial={{ x: x_screen * index, y: y_screen * index }}
-              animate={{ x: 0, y: 0 }}
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
             >
               <motion.h2 layout="position">{title}</motion.h2>
               {isOpen[index] && (

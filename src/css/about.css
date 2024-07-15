@@ -1,15 +1,19 @@
 .about-me-main {
   border: solid;
   height: 80vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.about-me-main h1 {
+  font-weight: normal;
+}
+
 .about-me {
   border: solid;
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 80vw;
+  padding: 24px;
 }
