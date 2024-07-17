@@ -23,7 +23,7 @@ const AboutDescription = ({ description }) => {
 
   return (
     <motion.div
-      style={{ overflow: "hidden" }}
+      style={{ overflow: "hidden", marginTop: "24px" }}
       variants={container}
       initial="hidden"
       animate="visible"

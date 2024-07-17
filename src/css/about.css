@@ -3,18 +3,17 @@
   height: 80vh;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .about-me-main h1 {
   font-weight: normal;
 }
 
 .about-me {
+  margin-top: 12px;
   border: solid;
   display: flex;
   align-items: center;
   flex-direction: column;
-  max-height: 70vh;
-  width: 80vw;
+  max-height: 80vh;
   padding: 24px;
 }

@@ -23,6 +23,7 @@ const About = () => {
     <div className="about-me-main">
       <div className="about-me">
         <AboutTitle text="More about Me 👋"></AboutTitle>
+
         <AboutDescription description={description}></AboutDescription>
       </div>
     </div>
