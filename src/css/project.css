@@ -37,7 +37,8 @@ hr {
 .grid-box-project {
   text-align: center;
   border: 1px solid;
-  min-width: 50%;
+  min-width: 80%;
+
   min-height: 5vh;
   margin: 12px;
   margin-left: 5vw;

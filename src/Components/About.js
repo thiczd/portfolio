@@ -1,7 +1,6 @@
 import React from "react";
 import "../css/about.css";
 import AboutTitle from "./AboutTitle";
-import AboutDescription from "./AboutDescription";
 import { motion } from "framer-motion";
 const About = () => {
   return (
@@ -20,9 +19,9 @@ const About = () => {
             marginTop: "24px",
             width: "100%",
           }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1.5, delay: 0.35 }}
+          initial={{ y: 100, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 1.5 }}
           className="about-me-description"
         >
           I am currently pursuing a bachelor's degree in Computer Science at New

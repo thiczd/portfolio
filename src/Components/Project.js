@@ -5,19 +5,24 @@ import { motion } from "framer-motion";
 const Project = () => {
   const projects = [
     {
-      title: " Project 1 🚀",
+      title: " Influenza Visualizer Project 📊",
       description:
-        "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Created an Influenza Visualizer Website to analyze and demonstrate data insight using CDC's flu data. This website was made using technologies such as HTML/CSS, JavaScript, Coldfusion and ChartJs",
     },
     {
-      title: " Project 2 ⭐",
+      title: " House Prediction Model 🏠",
       description:
-        "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Data Science Model build to predict housing prices based on an already existing dataset with 600 entries and a select 13 features. Project was later on deployed onto hugginface (NOTE: this is no longer available as a live deployment).",
     },
     {
-      title: " Project 3 💻",
+      title: " This Website 💻",
       description:
-        "orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Creating a responsive web app using ReactJs and the FramerMotion library. This website is a proof of concept for my front-end development skills in modern framework such as ReactJs. ",
+    },
+    {
+      title: "Todo WebAPP 💻",
+      description:
+        "(Work in Progress)  Creating a responsive web app using ReactJs, Express and MongoDB. This is a work in progress",
     },
   ];
   const [isOpen, setIsOpen] = useState(Array(projects.length).fill(false));
@@ -35,7 +40,7 @@ const Project = () => {
           animate={{ scale: 1 }}
           transition={{ duration: 0.7 }}
         >
-          My Current Projects
+          My Projects
           <motion.div
             className="title-projects-section"
             initial={{ scale: 0 }}
