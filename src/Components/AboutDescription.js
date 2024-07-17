@@ -8,7 +8,7 @@ const AboutDescription = ({ description }) => {
     hidden: { opacity: 0 },
     visible: () => ({
       opacity: 1,
-      transition: { staggerChildren: 0.01 },
+      transition: { staggerChildren: 0.002 },
     }),
   };
 
@@ -23,7 +23,10 @@ const AboutDescription = ({ description }) => {
 
   return (
     <motion.div
-      style={{ overflow: "hidden", marginTop: "24px" }}
+      style={{
+        overflow: "hidden",
+        marginTop: "24px",
+      }}
       variants={container}
       initial="hidden"
       animate="visible"

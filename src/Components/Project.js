@@ -36,7 +36,16 @@ const Project = () => {
           transition={{ duration: 0.7 }}
         >
           My Current Projects
+          <motion.div
+            className="title-projects-section"
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+          >
+            <hr></hr>
+          </motion.div>
         </motion.h1>
+
         <motion.div
           className="grid-project"
           transition={{ layout: { duration: 1, type: "spring" } }}

@@ -2,6 +2,7 @@ import React from "react";
 import "../css/about.css";
 import AboutTitle from "./AboutTitle";
 import AboutDescription from "./AboutDescription";
+import { motion } from "framer-motion";
 const About = () => {
   const description = `I am currently pursuing a bachelor's degree in Computer Science at New
   Jersey Institute of Technology (NJIT), with an expected graduation
@@ -24,6 +25,11 @@ const About = () => {
       <div className="about-me">
         <AboutTitle text="More about Me 👋"></AboutTitle>
 
+        <motion.hr
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.5 }}
+        ></motion.hr>
         <AboutDescription description={description}></AboutDescription>
       </div>
     </div>

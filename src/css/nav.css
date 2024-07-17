@@ -3,9 +3,7 @@
   justify-content: right;
   align-items: center;
   padding-right: 8vw;
-  border: solid;
-  border-radius: 4px;
-  border-color: grey;
+
   margin-bottom: 12px;
   box-sizing: border-box;
 }

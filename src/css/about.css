@@ -1,5 +1,4 @@
 .about-me-main {
-  border: solid;
   height: 80vh;
   display: flex;
   justify-content: center;
@@ -7,10 +6,18 @@
 .about-me-main h1 {
   font-weight: normal;
 }
+hr {
+  width: 50vw;
+  border: 1px solid grey;
+  margin-top: 24px;
+}
 
 .about-me {
+  margin: 12px;
   margin-top: 12px;
-  border: solid;
+  border: 1px solid;
+  border-radius: 12px;
+  background-color: rgb(257, 257, 257);
   display: flex;
   align-items: center;
   flex-direction: column;
