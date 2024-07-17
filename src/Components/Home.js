@@ -12,6 +12,17 @@ import gitHubLogo from "../images/github.png";
 import linkedInLogo from "../images/linkedin.png";
 
 const Home = () => {
+  const handleClick = (social) => {
+    if (social === "linkedIn") {
+      return window.open(
+        "https://www.linkedin.com/in/thibault-chezaud/",
+        "_blank"
+      );
+    } else if (social === "git") {
+      return window.open("https://github.com/breakthegreat", "_blank");
+    }
+  };
+
   const gridVariants = {
     hidden: { opacity: 0, x: -200 },
     visible: (i) => ({
@@ -112,8 +123,20 @@ const Home = () => {
 
         <h1>Socials</h1>
         <div className="socials-img">
-          <img src={gitHubLogo} alt="githublogo" />
-          <img src={linkedInLogo} alt="linkedInlogo" />
+          <img
+            src={gitHubLogo}
+            alt="githublogo"
+            onClick={() => {
+              handleClick("git");
+            }}
+          />
+          <img
+            src={linkedInLogo}
+            alt="linkedInlogo"
+            onClick={() => {
+              handleClick("linkedIn");
+            }}
+          />
         </div>
       </div>
     </motion.div>
