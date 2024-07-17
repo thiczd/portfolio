@@ -20,7 +20,7 @@ const Project = () => {
         "Creating a responsive web app using ReactJs and the FramerMotion library. This website is a proof of concept for my front-end development skills in modern framework such as ReactJs. ",
     },
     {
-      title: "Todo WebAPP 💻",
+      title: "Todo WebAPP 📋",
       description:
         "(Work in Progress)  Creating a responsive web app using ReactJs, Express and MongoDB. This is a work in progress",
     },
