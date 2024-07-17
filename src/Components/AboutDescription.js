@@ -26,6 +26,7 @@ const AboutDescription = ({ description }) => {
       style={{
         overflow: "hidden",
         marginTop: "24px",
+        width: "100%",
       }}
       variants={container}
       initial="hidden"
