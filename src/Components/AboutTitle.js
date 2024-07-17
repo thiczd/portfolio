@@ -38,15 +38,17 @@ const AboutTitle = ({ text }) => {
       initial="hidden"
       animate="visible"
     >
-      {words.map((word, index) => (
-        <motion.span
-          variants={child}
-          style={{ marginRight: "5px" }}
-          key={index}
-        >
-          {word}
-        </motion.span>
-      ))}
+      {words.map((word, index) => {
+        return (
+          <motion.span
+            variants={child}
+            style={{ marginRight: "5px" }}
+            key={index}
+          >
+            {word}
+          </motion.span>
+        );
+      })}
     </motion.div>
   );
 };
