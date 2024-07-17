@@ -122,7 +122,16 @@ body {
 .socials-img img {
   margin: 10px;
   margin-top: 0;
-  width: 8%;
+  max-width: 10%;
+  width: 5%;
+}
+
+@media (max-width: 768px) {
+  .socials-img img {
+    margin: 10px;
+    margin-top: 0;
+    width: 10%;
+  }
 }
 
 .socials-img img:hover {
