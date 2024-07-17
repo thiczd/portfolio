@@ -19,7 +19,7 @@ const Home = () => {
         "_blank"
       );
     } else if (social === "git") {
-      return window.open("https://github.com/breakthegreat", "_blank");
+      return window.open("https://github.com/thiczd", "_blank");
     }
   };
 
