@@ -3,7 +3,7 @@ import About from "./About";
 import Home from "./Home";
 import Nav from "./Nav";
 import { Route, Routes } from "react-router-dom";
-
+//main app
 function App() {
   return (
     <div>
