@@ -54,3 +54,8 @@ hr {
 .grid-box-project:hover {
   cursor: pointer;
 }
+
+.image-project {
+  margin: 12px;
+  width: 300px;
+}

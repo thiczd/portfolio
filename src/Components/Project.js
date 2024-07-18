@@ -1,13 +1,21 @@
 import React, { useState } from "react";
 import "../css/project.css";
 import { motion } from "framer-motion";
-
+import influenza_main from "../images-projects/influenza_main.png";
+import influenza_distribution from "../images-projects/influenza_distribution.png";
+import influenza_distribution_gif from "../images-projects/influenza_distribution_gif.gif";
 const Project = () => {
   const projects = [
     {
       title: " Influenza Visualizer Project 📊",
       description:
         "Created an Influenza Visualizer Website to analyze and demonstrate data insight using CDC's flu data. This website was made using technologies such as HTML/CSS, JavaScript, Coldfusion and ChartJs",
+      tech_stack: ["HTML/CSS", "JavaScript", "ChartJs"],
+      images_projects: [
+        influenza_main,
+        influenza_distribution,
+        influenza_distribution_gif,
+      ],
     },
     {
       title: " House Prediction Model 🏠",
@@ -56,36 +64,59 @@ const Project = () => {
           transition={{ layout: { duration: 1, type: "spring" } }}
           layout
         >
-          {projects.map(({ description, title }, index) => (
-            <motion.div
-              key={index}
-              transition={{
-                layout: { duration: 1, type: "spring" },
-                duration: 0.5,
-                delay: 0.35 * index,
-              }}
-              layout
-              onClick={() => {
-                toggleCard(index);
-              }}
-              className="grid-box-project"
-              style={{ borderRadius: "12px" }}
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-            >
-              <motion.h2 layout="position">{title}</motion.h2>
-              {isOpen[index] && (
-                <motion.div
-                  layout="position"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 1 }}
-                >
-                  <p>{description}</p>
-                </motion.div>
-              )}
-            </motion.div>
-          ))}
+          {projects.map(
+            ({ description, title, tech_stack, images_projects }, index) => (
+              <motion.div
+                key={index}
+                transition={{
+                  layout: { duration: 1, type: "spring" },
+                  duration: 0.5,
+                  delay: 0.35 * index,
+                }}
+                layout
+                onClick={() => {
+                  toggleCard(index);
+                }}
+                className="grid-box-project"
+                style={{ borderRadius: "12px" }}
+                initial={{ scale: 0 }}
+                animate={{ scale: 1 }}
+              >
+                <motion.h2 layout="position">{title}</motion.h2>
+                {isOpen[index] && (
+                  <motion.div
+                    layout="position"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1 }}
+                  >
+                    <p>{description}</p>
+                    {tech_stack && (
+                      <motion.div style={{ marginBottom: "12px" }}>
+                        Tech Stack:{" "}
+                        {tech_stack.map((tech, i) => (
+                          <span style={{ color: "red" }}>{tech + " "}</span>
+                        ))}
+                      </motion.div>
+                    )}
+
+                    {images_projects && (
+                      <motion.div>
+                        Images: <br></br>
+                        {images_projects.map((image, i) => (
+                          <img
+                            className="image-project"
+                            src={image}
+                            alt=""
+                          ></img>
+                        ))}
+                      </motion.div>
+                    )}
+                  </motion.div>
+                )}
+              </motion.div>
+            )
+          )}
         </motion.div>
       </div>
     </>
