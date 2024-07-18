@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import influenza_main from "../images-projects/influenza_main.png";
 import influenza_distribution from "../images-projects/influenza_distribution.png";
 import influenza_distribution_gif from "../images-projects/influenza_distribution_gif.gif";
+import { FaExpand } from "react-icons/fa";
+
 const Project = () => {
   const projects = [
     {
@@ -38,7 +40,7 @@ const Project = () => {
   const toggleCard = (index) => {
     setIsOpen((prev) => prev.map((item, i) => (i === index ? !item : item)));
   };
-
+  // TODO, have an expansion button to have the whole div take the entire screen width
   return (
     <>
       <div className="main-project">
@@ -83,6 +85,8 @@ const Project = () => {
                 animate={{ scale: 1 }}
               >
                 <motion.h2 layout="position">{title}</motion.h2>
+                <FaExpand className="expand-icon"></FaExpand>
+
                 {isOpen[index] && (
                   <motion.div
                     layout="position"
