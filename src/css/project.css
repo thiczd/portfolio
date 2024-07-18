@@ -31,7 +31,7 @@ hr {
 
 @media (min-width: 768px) {
   .grid-project {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .grid-box-project {
@@ -46,7 +46,6 @@ hr {
   margin-left: 5vw;
   margin-right: 5vw;
   padding: 12px;
-  overflow: hidden;
 }
 
 .grid-box-project h2 {
@@ -61,15 +60,8 @@ hr {
   margin: 12px;
   width: 300px;
 }
-.expand-icon {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  z-index: 10;
-}
 
-.expand-icon:hover {
-  scale: 1.25;
-  transition: 0.5s;
+.image-project:hover {
+  scale: 1.75;
+  transition: 0.4s;
 }
