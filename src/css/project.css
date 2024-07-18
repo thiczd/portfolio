@@ -31,10 +31,12 @@ hr {
 
 @media (min-width: 768px) {
   .grid-project {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 .grid-box-project {
+  position: relative; /* Ensure the child elements are positioned relative to this div */
+
   text-align: center;
   border: 1px solid;
   min-width: 80%;
@@ -44,7 +46,6 @@ hr {
   margin-left: 5vw;
   margin-right: 5vw;
   padding: 12px;
-  overflow: hidden;
 }
 
 .grid-box-project h2 {
@@ -53,4 +54,14 @@ hr {
 
 .grid-box-project:hover {
   cursor: pointer;
+}
+
+.image-project {
+  margin: 12px;
+  width: 300px;
+}
+
+.image-project:hover {
+  scale: 1.75;
+  transition: 0.4s;
 }
