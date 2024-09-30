@@ -86,9 +86,8 @@
   height: 150px;
   margin-top: 10px;
   margin-bottom: 10px;
-  background-color: lightblue;
-  box-shadow: 1px 1px 10px 0px lightcoral;
-  color: black;
+  box-shadow: 1px 1px 10px 0px rgb(12, 12, 140);
+  color: white;
 }
 
 .grid * {
