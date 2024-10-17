@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.9e6aadba.css",
-    "main.js": "/portfolio/static/js/main.28df5136.js",
+    "main.js": "/portfolio/static/js/main.5915aede.js",
     "static/media/influenza_distribution_gif.gif": "/portfolio/static/media/influenza_distribution_gif.b54a8b2c85dd5ade0aa9.gif",
     "static/media/influenza_main.png": "/portfolio/static/media/influenza_main.77fc95aff23af9b5df4a.png",
     "static/media/influenza_distribution.png": "/portfolio/static/media/influenza_distribution.c4b309012d950cd503da.png",
@@ -16,10 +16,10 @@
     "static/media/js.png": "/portfolio/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/portfolio/index.html",
     "main.9e6aadba.css.map": "/portfolio/static/css/main.9e6aadba.css.map",
-    "main.28df5136.js.map": "/portfolio/static/js/main.28df5136.js.map"
+    "main.5915aede.js.map": "/portfolio/static/js/main.5915aede.js.map"
   },
   "entrypoints": [
     "static/css/main.9e6aadba.css",
-    "static/js/main.28df5136.js"
+    "static/js/main.5915aede.js"
   ]
 }
