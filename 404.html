@@ -3,17 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="0; url='/portfolio/'" />
     <title>Page Not Found</title>
     <script type="text/javascript">
-      // Redirect to the homepage
+      // Redirect to the homepage only if not already there
       var pathname = window.location.pathname;
-      if (pathname.startsWith("/portfolio")) {
-        window.location.replace("/portfolio" + pathname);
-      } else {
+      // Check if we are not already on the homepage
+      if (pathname !== "/portfolio/" && pathname !== "/portfolio") {
+        // Redirect to the homepage
         window.location.replace("/portfolio/");
       }
     </script>
   </head>
-  <body></body>
+  <body>
+    <h1>404 - Page Not Found</h1>
+    <p>
+      The page you're looking for doesn't exist. Redirecting to the
+      <a href="/portfolio/">homepage</a>.
+    </p>
+  </body>
 </html>
