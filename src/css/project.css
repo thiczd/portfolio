@@ -39,6 +39,8 @@ hr {
 
   text-align: center;
   border: 1px solid;
+  box-shadow: 1px 1px 12px 0px #0c0c8c;
+
   min-width: 80%;
 
   min-height: 5vh;
