@@ -1,0 +1,59 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills h1 {
+  display: flex;
+  justify-content: center;
+}
+.grid-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  border-color: gray;
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 10px 0px rgb(12, 12, 140);
+  color: white;
+}
+
+.grid * {
+  padding: 5px;
+}
+.portfolio {
+  border: 1px solid white;
+  width: 80vw;
+  display: grid;
+
+  justify-items: center;
+  align-items: center;
+}
+
+@media (min-width: 480px) {
+  .portfolio {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .portfolio {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .portfolio {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.portfolio img {
+  height: 50px;
+  width: 50px;
+}

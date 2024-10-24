@@ -27,11 +27,17 @@ hr {
   .grid-project {
     grid-template-columns: repeat(1, 1fr);
   }
+  .grid-box-project {
+    width: 65vw;
+  }
 }
 
 @media (min-width: 768px) {
   .grid-project {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-box-project {
+    width: 40vw;
   }
 }
 .grid-box-project {
@@ -39,8 +45,7 @@ hr {
 
   text-align: center;
   border: 1px solid;
-  min-width: 80%;
-
+  max-width: 65vw;
   min-height: 5vh;
   margin: 12px;
   margin-left: 5vw;
