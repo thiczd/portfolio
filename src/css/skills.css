@@ -29,6 +29,10 @@
 }
 .portfolio {
   border: 1px solid white;
+  border-radius: 12px;
+
+  box-shadow: 1px 1px 12px 0px #8c8c0c;
+
   padding: 32px;
   display: grid;
   justify-items: center;

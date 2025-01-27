@@ -23,43 +23,31 @@
   /* border: solid;
   border-color: black; */
   width: 80vw;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.description {
-  /* border: solid;
-  border-color: red; */
-  display: flex;
-  justify-content: center;
-  width: 80vw;
-  margin-bottom: 10px;
-}
-
-
-
-
-
-
-
-.aboutMe {
+.about-home {
   /* border: 1px solid;
   border-color: black;
   border-radius: 12px; */
+  margin: 0px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80vw;
-  margin: 12px;
-  margin-top: 0px;
+  max-width: 50vw;
 }
-.aboutMe h1 {
+.about-home h1 {
   margin-bottom: 0;
 }
-
+.about-home p {
+  font-size: 20px;
+}
 .socials-img {
   display: flex;
   justify-content: center;

@@ -21,7 +21,10 @@ const About = () => {
           }}
           initial={{ y: 100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1.5 }}
+          transition={{
+            y: { duration: 1.5 },
+            opacity: { duration: 2.5 },
+          }}
           className="about-me-description"
         >
           I am currently pursuing a bachelor's degree in Computer Science at New

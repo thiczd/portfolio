@@ -31,11 +31,11 @@ const Home = () => {
           transition={{ duration: 1 }}
         >
           <h1 className="title">Welcome</h1>
-          <div className="description">Welcome to my portfolio website.</div>
+          {/* <div className="description"></div> */}
         </motion.div>
 
         <motion.div
-          className="aboutMe"
+          className="about-home"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -44,9 +44,9 @@ const Home = () => {
 
           <h1> About </h1>
           <p>
-            Hey my name is Thibault, thanks for checking out my website! Please
-            feel free to check my projects and read more about me in the "About"
-            section.
+            My name is Thibault, I am a dedicated web developper and software
+            programmer. Please feel free to check me website for more
+            information about myself and my work. Thank you for visiting !
           </p>
           <hr></hr>
         </motion.div>
