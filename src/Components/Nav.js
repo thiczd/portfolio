@@ -5,15 +5,19 @@ const Nav = () => {
   return (
     <nav className="nav">
       <ul className="nav-list">
-        <li>
-          <Link to="/portfolio/">Home</Link>
-        </li>
-        <li>
-          <Link to="/portfolio/project">Project</Link>
-        </li>
-        <li>
-          <Link to="/portfolio/about">About</Link>
-        </li>
+        <Link to="/portfolio/" className="buttons">
+          Home
+        </Link>
+        <Link to="/portfolio/skills" className="buttons">
+          Skills
+        </Link>
+        <Link to="/portfolio/project" className="buttons">
+          Project
+        </Link>
+
+        <Link to="/portfolio/about" className="buttons">
+          About
+        </Link>
       </ul>
     </nav>
   );

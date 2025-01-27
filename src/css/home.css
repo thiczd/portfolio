@@ -1,8 +1,8 @@
 .main {
   border: 1px solid;
-  border-color: black;
+  border-color: white;
   border-radius: 12px;
-  box-shadow: 0px 0px 1px 1px black;
+  box-shadow: 1px 1px 12px 0px #8c8c0c;
   margin-bottom: 10px;
   padding-bottom: 10px;
   margin-right: 5vw;
@@ -23,92 +23,31 @@
   /* border: solid;
   border-color: black; */
   width: 80vw;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.description {
-  /* border: solid;
-  border-color: red; */
-  display: flex;
-  justify-content: center;
-  width: 80vw;
-  margin-bottom: 10px;
-}
-
-.skills h1 {
-  display: flex;
-  justify-content: center;
-}
-
-.portfolio {
-  width: 80vw;
-  display: grid;
-
-  justify-items: center;
-  align-items: center;
-}
-
-@media (min-width: 480px) {
-  .portfolio {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (min-width: 768px) {
-  .portfolio {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .portfolio {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.portfolio img {
-  height: 50px;
-  width: 50px;
-}
-
-.grid-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid;
-  border-color: gray;
-  border-radius: 10px;
-  width: 150px;
-  height: 150px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  box-shadow: 1px 1px 10px 0px rgb(12, 12, 140);
-  color: white;
-}
-
-.grid * {
-  padding: 5px;
-}
-
-.aboutMe {
+.about-home {
   /* border: 1px solid;
   border-color: black;
   border-radius: 12px; */
+  margin: 0px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80vw;
-  margin: 12px;
-  margin-top: 0px;
+  max-width: 50vw;
 }
-.aboutMe h1 {
+.about-home h1 {
   margin-bottom: 0;
 }
-
+.about-home p {
+  font-size: 20px;
+}
 .socials-img {
   display: flex;
   justify-content: center;
