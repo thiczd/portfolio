@@ -29,7 +29,6 @@
 }
 .portfolio {
   border: 1px solid white;
-  min-width: 50vw;
   padding: 32px;
   display: grid;
   justify-items: center;
