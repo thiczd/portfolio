@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2b42a5bf.css",
+    "main.css": "/portfolio/static/css/main.06339ef7.css",
     "main.js": "/portfolio/static/js/main.d895db52.js",
     "static/media/influenza_distribution_gif.gif": "/portfolio/static/media/influenza_distribution_gif.b54a8b2c85dd5ade0aa9.gif",
     "static/media/influenza_main.png": "/portfolio/static/media/influenza_main.77fc95aff23af9b5df4a.png",
@@ -15,11 +15,11 @@
     "static/media/linkedin.png": "/portfolio/static/media/linkedin.f249b38224ca41a0b909.png",
     "static/media/js.png": "/portfolio/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/portfolio/index.html",
-    "main.2b42a5bf.css.map": "/portfolio/static/css/main.2b42a5bf.css.map",
+    "main.06339ef7.css.map": "/portfolio/static/css/main.06339ef7.css.map",
     "main.d895db52.js.map": "/portfolio/static/js/main.d895db52.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b42a5bf.css",
+    "static/css/main.06339ef7.css",
     "static/js/main.d895db52.js"
   ]
 }
