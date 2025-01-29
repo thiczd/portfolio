@@ -95,11 +95,30 @@ const Project = () => {
                   >
                     <p>{description}</p>
                     {tech_stack && (
-                      <motion.div style={{ marginBottom: "12px" }}>
-                        Tech Stack:{" "}
-                        {tech_stack.map((tech, i) => (
-                          <span style={{ color: "red" }}>{tech + " "}</span>
-                        ))}
+                      <motion.div
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          marginBottom: "12px",
+                        }}
+                      >
+                        <ul>
+                          <span
+                            style={{
+                              fontWeight: "bold",
+                              fontSize: "18px",
+                              textDecoration: "underline",
+                            }}
+                          >
+                            {" "}
+                            Tech Stack:{" "}
+                          </span>
+                          {tech_stack.map((tech, i) => (
+                            <li>
+                              <span>{tech + " "}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </motion.div>
                     )}
 

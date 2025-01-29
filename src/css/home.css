@@ -1,14 +1,7 @@
 .main {
-  border: 1px solid;
-  border-color: white;
-  border-radius: 12px;
-  box-shadow: 1px 1px 12px 0px #8c8c0c;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
-  margin-right: 5vw;
-  margin-left: 5vw;
+  display: flex;
+  justify-content: center;
 }
-
 .main h1 {
   font-weight: normal;
 }
@@ -17,12 +10,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid;
+  border-color: white;
+  border-radius: 12px;
+  box-shadow: 1px 1px 12px 0px #8c8c0c;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  max-width: 60vw;
 }
 
 .title {
   /* border: solid;
   border-color: black; */
-  width: 80vw;
   margin-bottom: 0px;
   display: flex;
   flex-direction: column;
@@ -39,7 +38,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80vw;
+
   max-width: 50vw;
 }
 .about-home h1 {
@@ -56,16 +55,7 @@
 .socials-img img {
   margin: 10px;
   margin-top: 0;
-  max-width: 10%;
-  width: 5%;
-}
-
-@media (max-width: 768px) {
-  .socials-img img {
-    margin: 10px;
-    margin-top: 0;
-    width: 10%;
-  }
+  width: 8.5%;
 }
 
 .socials-img img:hover {
